@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Montserrat", sans-serif;
+}
+body{
+    overflow: hidden;
+    background-color: black;
+    color: white;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+.anchor{
+    text-decoration: none;
+    color: white;
+}
+.sidebar{
+    background-color: black;
+    width: 340px;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+    
+}
+.main-content{
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem;
+}
+
+.sidebar-nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    padding: 0.5rem 0.75rem;
+    font-weight: 500;
+    height: 112px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+
+}
+.nav-option a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.25rem;
+    margin-left: 1vw;
+
+}
+.nav-option{
+    padding: 0.75rem 1rem;
+    height: 40px;
+    opacity: 0.7;
+}
+.nav-option:hover{
+    opacity: 1;
+    transition: 0.1s;
+}
+.nav-option i{
+    font-size: 1.5rem;
+}
+
+.lib-options img{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.lib-options a{
+    margin-left: 1vw;
+    font-weight: 600;
+}
+.lib-options{
+    padding: 0.25rem 0.5rem;
+}
+.sidebar-lib{
+    background-color: #121212;
+    height: 100%;
+    border-radius: 1rem;
+}
+.lib{
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+.lib-icons i{
+    margin-left: 3vw;
+    opacity: 0.5;
+}
+.lib-icons i:hover{
+    opacity: 1;
+}
+.lib-boxes .box{
+    padding: 1rem 1.25rem;
+    margin: 1.75rem 1rem 0.5rem 1rem;
+    width: 19.188rem;
+    height:8.313rem;
+    background-color: #232323;
+    border-radius: 7px;
+}
+.lib-boxes .box2{
+    padding: 1rem 0.75rem;
+    margin: 1.75rem 1rem 0.5rem 1rem;
+    width: 19.188rem;
+    height:9rem;
+    background-color: #232323;
+    border-radius: 7px;
+}
+.lib-boxes .box2 .para-1{
+    font-size: 15px;
+    font-weight: 700;
+}
+.lib-boxes .box2 .para-2{
+    font-size: 13px;
+    margin: 12px 0px;
+    font-weight: 400;
+}
+.lib-boxes .box .para-1{
+    font-weight: 700;
+}
+.lib-boxes .box .para-2{
+    margin: 12px 0px 16px;
+    font-size: 14px;
+}
+.badge{
+    background-color: #fff;
+    border: none;
+    width: 8rem;
+    height: 2rem;
+    border-radius: 20px;
+    font-weight: 700;
+}
+.lib-boxes .box2 .badge{
+    background-color: #fff;
+    border: none;
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 20px;
+    font-weight: 700;
+    margin-top: 12px;
+}
+.lib-boxes .badge:hover{
+    transform: scale(1.07);
+    transition: 0.1s ease-in;
+}
+
+.sticky-nav{
+    display: flex;
+    height: 64px;
+    width: 100%;
+    align-items: center;
+    padding: 0 1rem;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    z-index: 1;
+}
+.left-cont{
+    display: flex;
+}
+.right-cont{
+    display: flex;
+}
+
+.sticky-nav .backward{
+    height: 32px;
+    width: 32px;
+    background-color:black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sticky-nav .backward img{
+    height: 20px;
+    width: 20px;
+}
+.sticky-nav .forward{
+    height: 32px;
+    width: 32px;
+    background-color:black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5rem;
+}
+.sticky-nav .forward img{
+    height: 20px;
+    width: 20px;
+}
+.right-cont button{
+    margin-left: 2rem;
+}
+.right-cont .one{
+    width: 10rem;
+    height: 2.5rem;
+}
+.right-cont .two{
+    width: 8rem;
+    height: 2.5rem;
+    background-color: black;
+    color: white;
+}
+.right-cont .user{
+    height: 32px;
+    width: 32px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 2rem;
+    margin-right: 0.5rem;
+}
+.cards-container{
+    display: flex;
+    margin-top: 1.5vw;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: #232323;
+    width: 200px;
+    border-radius: 0.4rem;
+    padding: 0.75rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+.card-img{
+    width: 100%;
+    /* margin: 0.5rem; */
+    border-radius: 0.4rem;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.649);
+
+}
+.card-title{
+    margin: 20px 0 15px 0;
+    font-weight: 700;
+}
+.card-info{
+    font-size: 14px;
+    line-height: 2vw;
+    opacity: 0.7;
+}
+.main-content h2{
+    margin-top: 2vw;
+}
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width: 95%;
+    height: 30%;
+    border-top: 2px solid white;
+    opacity: 0.4;
+ 
+}
+.music-player{
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+    display: flex;
+    /* align-items: center; */
+
+    
+}
+.left{
+    display: flex;
+    align-items: center;
+    width: 25%;
+}
+.left .like .first{
+    height: 25px;
+    width: 25px;
+    margin-left: 2rem;
+}
+.left .like .second{
+    height: 32px;
+    width: 32px;
+}
+.left .like{
+    display: flex;
+    align-items: center;
+
+}
+.left img{
+    margin: 0.5rem;
+    border-radius: 3px;
+    height: 3.7vw;
+}
+.left .name .song-name{
+    font-weight: 700;
+    font: size 14px;;
+}
+.left .name .song-writer{
+    font-size: 13px;
+    opacity: 0.7;
+    margin-top: 3px;
+}
+.left .name{
+    margin-left: 6px;
+}
+.middle{
+    width: 50%;
+    text-align: center;
+    height: 50%;
+}
+.middle .player-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.middle .player-control img{
+    height: 2vw;
+    margin:  0.5vw 1.75vw;
+}
+.middle .player-control #one,#two,#four,#five{
+    height: 1vw;
+    opacity: 0.7;
+}
+.middle .player-control #three{
+    height: 2.3vw;
+}
+.progress-bar{
+    width: 60%;
+    appearance: none; 
+    background-color: transparent;
+    cursor: pointer;
+}
+.playback-time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height:0.25rem;
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 16px;
+    width: 16px;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}                        
+
+.right{
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+.right img{
+    width: 2rem;
+    margin: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1000px) {
+    .right-cont .one{
+        display: none;
+    }
+    .sticky-nav .forward{
+        display:none;
+
+    }
+    
+}
